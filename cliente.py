@@ -17,5 +17,4 @@ print(ftp.getwelcome())
 with open('ti.png', 'wb') as fp:
     ftp.retrbinary('RETR i.png', fp.write)
 
-
 ftp.quit()
