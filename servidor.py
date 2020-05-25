@@ -80,7 +80,7 @@ def main():
     handler.authorizer = authorizer
     # Mensagem de boas vindas
     handler.banner = "##### Ola! Bem vindo ao Meu FTP.####"
-    address = ('', 2121)
+    address = ('127.0.0.1', 2121)
     
     dtp_handler = ThrottledDTPHandler
     dtp_handler.read_limit = LIMITE_LEITURA  
