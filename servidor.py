@@ -88,6 +88,8 @@ def main():
     
     handler.dtp_handler = dtp_handler
     
+    handler.timeout = 3000 #tempo em segundos para cancelamento da conexão
+    
     logging.basicConfig(level=logging.DEBUG)
 
     server = FTPServer(address, handler)
